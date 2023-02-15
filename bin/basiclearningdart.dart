@@ -1,4 +1,4 @@
-import 'package:basiclearningdart/Week%201/exercise1.dart';
+import 'package:basiclearningdart/Week%202/exercise1.dart';
 
 void main(List<String> arguments) {
   //* Bai 1

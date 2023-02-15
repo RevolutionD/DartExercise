@@ -1,2 +1,2 @@
-A sample command-line application with an entrypoint in `bin/`, library code
-in `lib/`, and example unit test in `test/`.
+File chạy chính ở lib/basiclearningdart.dart
+Bài tập tuần 1 ở path: lib/Week2
