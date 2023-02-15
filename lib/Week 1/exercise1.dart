@@ -11,7 +11,7 @@ void exercise2PrintWithSingerAndDoubleQuotes() {
 }
 
 void exercise3SetConstantForInt() {
-  const int a = 7;
+  final int a = 7;
 }
 
 void exercise4FindSimpleInterest() {
@@ -59,17 +59,6 @@ void exercise8SwapNumber() {
 
   print('num 1 = $num1');
   print('num 2 = $num2');
-}
-
-class Test<T> {
-  T value;
-  Test({required this.value});
-}
-
-void swap(Test a, Test b) {
-  Test tmp = a;
-  a = b;
-  b = tmp;
 }
 
 void exercise9RemoveAllWhiteSpace() {
