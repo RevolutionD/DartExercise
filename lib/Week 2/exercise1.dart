@@ -49,16 +49,31 @@ void exercise7FindQuotientAndReminder() {
 
 void exercise8SwapNumber() {
   print('Input number 1:');
-  int num1 = int.parse(stdin.readLineSync()!);
+  IntNum num1 = IntNum(int.parse(stdin.readLineSync()!));
   print('Input number 2:');
-  int num2 = int.parse(stdin.readLineSync()!);
+  IntNum num2 = IntNum(int.parse(stdin.readLineSync()!));
 
-  var tmp = num1;
-  num1 = num2;
-  num2 = tmp;
+  print('Before swap:');
 
-  print('num 1 = $num1');
-  print('num 2 = $num2');
+  print('num 1 = ${num1.value}');
+  print('num 2 = ${num2.value}');
+
+  swap(num1, num2);
+
+  print('After swap:');
+  print('num 1 = ${num1.value}');
+  print('num 2 = ${num2.value}');
+}
+
+class IntNum {
+  int value;
+  IntNum(this.value);
+}
+
+void swap(IntNum num1, IntNum num2) {
+  var tmp = num1.value;
+  num1.value = num2.value;
+  num2.value = tmp;
 }
 
 void exercise9RemoveAllWhiteSpace() {
