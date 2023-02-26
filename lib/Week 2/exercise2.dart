@@ -144,8 +144,6 @@ practice2() {
         break;
     }
 
-    clearConsole();
-
     print("\nDo you want to continue practice 2? (y/n)");
     String answer = stdin.readLineSync()!;
     if (answer == 'n') {

@@ -172,7 +172,6 @@ practice1() {
         print("Invalid choice.");
     }
 
-    clearConsole();
     print('\nDo you want to continue practice 1? (y/n)');
     String isTerminate = stdin.readLineSync()!;
     if (isTerminate == 'n') {
