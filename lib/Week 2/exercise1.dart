@@ -1,5 +1,8 @@
-// ignore_for_file: public_member_api_docs, sort_constructors_first
 import 'dart:io';
+
+import 'package:basiclearningdart/Week%202/exercise2.dart';
+
+import '../basiclearningdart.dart';
 
 void exercise1PrintMyName() {
   print('My name is Do Hong Bien');
@@ -111,4 +114,70 @@ void exercise11SplitAmout({double? totalBill, int? numberOfPeople}) {
   }
 
   print('Each people need to pay: ${bill / people}');
+}
+
+practice1() {
+  while (true) {
+    print("\nChoose a function to run:");
+    print("1. Print Name");
+    print("2. Print Quotes");
+    print("3. Print Constant");
+    print("4. Calculate Simple Interest");
+    print("5. Print Square");
+    print("6. Print Full Name");
+    print("7. Find Quotient and Remainder");
+    print("8. Swap Numbers");
+    print("9. Remove Whitespaces");
+    print("10. Convert String to Int");
+    print("11. Calculate Split Amount");
+
+    int choice = int.parse(stdin.readLineSync()!);
+    clearConsole();
+
+    switch (choice) {
+      case 1:
+        exercise1PrintMyName();
+        break;
+      case 2:
+        exercise2PrintWithSingerAndDoubleQuotes();
+        break;
+      case 3:
+        exercise3SetConstantForInt();
+        break;
+      case 4:
+        exercise4FindSimpleInterest();
+        break;
+      case 5:
+        exercise5FindSquareNumber();
+        break;
+      case 6:
+        ex6GenerateMultiplicationTableOf5();
+        break;
+      case 7:
+        ex7GenerateMultiplicationTable1to9();
+        break;
+      case 8:
+        ex8SimpleCalculator();
+        break;
+      case 9:
+        ex9PrintNumber();
+        break;
+      case 10:
+        exercise10ConvertStringToInt();
+        break;
+      case 11:
+        exercise11SplitAmout();
+        break;
+      default:
+        print("Invalid choice.");
+    }
+
+    clearConsole();
+    print('\nDo you want to continue practice 1? (y/n)');
+    String isTerminate = stdin.readLineSync()!;
+    if (isTerminate == 'n') {
+      break;
+    }
+    clearConsole();
+  }
 }

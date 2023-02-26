@@ -1,36 +1,39 @@
+import 'dart:io';
+
 import 'package:basiclearningdart/Week%202/exercise1.dart';
+import 'package:basiclearningdart/Week%202/exercise2.dart';
+import 'package:basiclearningdart/Week%203/exercise3.dart';
+import 'package:basiclearningdart/basiclearningdart.dart';
 
 void main(List<String> arguments) {
-  // //* Bai 1
-  // exercise1PrintMyName();
+  while (true) {
+    print("Choose an option: ");
+    print("1. Practice 1");
+    print("2. Practice 2");
+    print("3. Practice 3");
+    int option = int.parse(stdin.readLineSync()!);
+    clearConsole();
 
-  // //* Bai 2
-  // exercise2PrintWithSingerAndDoubleQuotes();
+    switch (option) {
+      case 1:
+        practice1();
+        break;
+      case 2:
+        practice2();
+        break;
+      case 3:
+        practice3();
+        break;
+      default:
+        print("Invalid option");
+        break;
+    }
 
-  // //* Bai 3
-  // exercise3SetConstantForInt();
-
-  // //* Bai 4
-  // exercise4FindSimpleInterest();
-
-  // //* Bai 5
-  // exercise5FindSquareNumber();
-
-  // //* Bai 6
-  // exercise6PrintFullName();
-
-  // //* Bai 7
-  // exercise7FindQuotientAndReminder();
-
-  // //* Bai 8
-  exercise8SwapNumber();
-
-  // //* Bai 9
-  // exercise9RemoveAllWhiteSpace();
-
-  // //* Bai 10
-  // exercise10ConvertStringToInt();
-
-  // //* Bai 11
-  // exercise11SplitAmout();
+    print("Do you want to continue program? (y/n)");
+    String answer = stdin.readLineSync()!;
+    if (answer == 'n') {
+      break;
+    }
+    clearConsole();
+  }
 }
