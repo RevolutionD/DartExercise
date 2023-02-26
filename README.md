@@ -4,5 +4,5 @@ File chạy chính ở path: **[bin/basiclearningdart.dart](bin/basiclearningdar
 > Bài tập tuần 3 ở path: **[lib/Week 3](lib/Week%203/)** 
 
 ## Thông tin môn học
-Bộ môn lập trình thiết bị di động - N07
-Sinh viên thực hiện: Đỗ Hồng Biên - 89711
+Bộ môn: **Lập trình thiết bị di động - N07** <br>
+Sinh viên thực hiện: **Đỗ Hồng Biên - 89711**
