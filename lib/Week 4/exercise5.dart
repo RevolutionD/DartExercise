@@ -40,9 +40,9 @@ void ex6DeleteHelloCopyFile() {
 void ex7StoreAndReadStudentInformation() {
   List<List<dynamic>> rows = [
     ['Name', 'Age', 'Address'],
-    ['Alice', 20, '123 Main St'],
-    ['Bob', 21, '456 Oak St'],
-    ['Charlie', 22, '789 Pine St'],
+    ['Jack', 20, '123 Main St'],
+    ['Jack 2', 21, '456 Main St 1'],
+    ['Jack 3', 22, '789 Main St 2'],
   ];
 
   File csvFile = File('students.csv');
