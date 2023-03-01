@@ -5,11 +5,13 @@ import '../basiclearningdart.dart';
 void ex1AddNameToHelloFile() {
   File file = File('hello.txt');
   file.writeAsStringSync('Your name\n');
+  print('Name added to file.');
 }
 
 void ex2AppendFriendsNameToHelloFile() {
   File file = File('hello.txt');
   file.writeAsStringSync('Friend\'s name\n', mode: FileMode.append);
+  print('Friend name added to file.');
 }
 
 void ex3GetCurrentWorkingDirectory() {
@@ -21,12 +23,14 @@ void ex4CopyHelloFileToHelloCopyFile() {
   File original = File('hello.txt');
   File copy = File('hello_copy.txt');
   original.copySync(copy.path);
+  print('File copied.');
 }
 
 void ex5Create100FilesUsingLoop() {
   for (int i = 0; i < 100; i++) {
     File file = File('file$i.txt');
     file.createSync();
+    print('File created: ${file.path}');
   }
 }
 
@@ -34,6 +38,9 @@ void ex6DeleteHelloCopyFile() {
   File file = File('hello_copy.txt');
   if (file.existsSync()) {
     file.deleteSync();
+    print('File deleted.');
+  } else {
+    print('File does not exist.');
   }
 }
 
