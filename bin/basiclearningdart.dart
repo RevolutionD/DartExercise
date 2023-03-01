@@ -14,6 +14,7 @@ void main(List<String> arguments) {
     print("2. Practice 2");
     print("3. Practice 3");
     print("4. Practice 4");
+    print("5. Practice 5");
     int option = int.parse(stdin.readLineSync()!);
     clearConsole();
 
