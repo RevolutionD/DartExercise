@@ -5,6 +5,8 @@ import 'package:basiclearningdart/Week%202/exercise2.dart';
 import 'package:basiclearningdart/Week%203/exercise3.dart';
 import 'package:basiclearningdart/Week%204/exercise4.dart';
 import 'package:basiclearningdart/Week%204/exercise5.dart';
+import 'package:basiclearningdart/Week%205/exercise6_1.dart';
+import 'package:basiclearningdart/Week%205/exercise6_2.dart';
 import 'package:basiclearningdart/basiclearningdart.dart';
 
 void main(List<String> arguments) {
@@ -15,6 +17,8 @@ void main(List<String> arguments) {
     print("3. Practice 3");
     print("4. Practice 4");
     print("5. Practice 5");
+    print("6. Practice 6-1");
+    print("7. Practice 6-2");
     int option = int.parse(stdin.readLineSync()!);
     clearConsole();
 
@@ -33,6 +37,12 @@ void main(List<String> arguments) {
         break;
       case 5:
         practice5();
+        break;
+      case 6:
+        practice6_1();
+        break;
+      case 7:
+        practice6_2();
         break;
       default:
         print("Invalid option");
