@@ -4,13 +4,13 @@ import '../basiclearningdart.dart';
 
 void ex1AddNameToHelloFile() {
   File file = File('hello.txt');
-  file.writeAsStringSync('Your name\n');
+  file.writeAsStringSync('Bien\n');
   print('Name added to file.');
 }
 
 void ex2AppendFriendsNameToHelloFile() {
   File file = File('hello.txt');
-  file.writeAsStringSync('Friend\'s name\n', mode: FileMode.append);
+  file.writeAsStringSync('Jack :) friend\n', mode: FileMode.append);
   print('Friend name added to file.');
 }
 
