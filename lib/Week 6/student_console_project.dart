@@ -115,18 +115,18 @@ void studentConsoleProject() {
 
   while (true) {
     print('Enter command:');
-    print('add - Add a new student');
-    print('clear - Clear all students');
-    print('search - Search for students');
-    print('update - Update a student');
-    print('delete - Delete a student');
-    print('display - Display all students');
-    print('exit - Exit the program');
+    print('1 - Add a new student');
+    print('2 - Clear all students');
+    print('3 - Search for students');
+    print('4 - Update a student');
+    print('5 - Delete a student');
+    print('6 - Display all students');
+    print('7 - Exit the program');
 
-    String command = stdin.readLineSync()!.toLowerCase();
+    int command = stdin.readLineSync()! as int;
     clearConsole();
     switch (command) {
-      case 'add':
+      case 1:
         print('Enter student information:');
         print('ID:');
         int id = int.parse(stdin.readLineSync()!);
@@ -144,10 +144,10 @@ void studentConsoleProject() {
         String mobile = stdin.readLineSync()!;
         data.add(Student(id, firstName, surName, dateOfBirth, gender, address, mobile));
         break;
-      case 'clear':
+      case 2:
         data.clear();
         break;
-      case 'search':
+      case 3:
         print('Enter search query:');
         String query = stdin.readLineSync()!;
         List<Student> results = data.search(query);
@@ -159,7 +159,7 @@ void studentConsoleProject() {
           }
         }
         break;
-      case 'update':
+      case 4:
         print('Enter student ID to update:');
         int id = int.parse(stdin.readLineSync()!);
         Student student = data.students.firstWhere((s) => s.id == id);
@@ -188,15 +188,15 @@ void studentConsoleProject() {
           data.update(Student(id, firstName, surName, dateOfBirth, gender, address, mobile));
         }
         break;
-      case 'delete':
+      case 5:
         print('Enter student ID to delete:');
         int id = int.parse(stdin.readLineSync()!);
         data.delete(id);
         break;
-      case 'display':
+      case 6:
         data.display();
         break;
-      case 'exit':
+      case 7:
         return;
       default:
         print('Invalid command.');
